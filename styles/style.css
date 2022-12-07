@@ -197,7 +197,13 @@
   margin: 0;
   margin-top: 32px;
   font-family: "Gilroy-Bold";
+  display: flex;
 }
+
+.main-description__link-img {
+  margin-left: 16px;
+}
+
 .main-article {
   color: var(--white);
   width: 100%;
@@ -273,6 +279,11 @@
   display: block;
   margin-top: 27px;
   color: var(--golden);
+  display: flex;
+}
+
+.main-article__link-img {
+  margin-left: 16px;
 }
 
 .main-article__number {
