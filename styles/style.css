@@ -64,14 +64,13 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
+  text-decoration: none;
+  color: var(--white);
+  display: block;
 }
 
 .header__nav-link::first-letter {
   text-transform: uppercase;
-}
-
-.header__nav-link:last-of-type {
-  margin-right: 0;
 }
 
 .header__user {
@@ -198,6 +197,9 @@
   margin-top: 32px;
   font-family: "Gilroy-Bold";
   display: flex;
+  align-self: flex-start;
+  text-decoration: none;
+  color: var(--white);
 }
 
 .main-description__link-img {
@@ -279,7 +281,8 @@
   display: block;
   margin-top: 27px;
   color: var(--golden);
-  display: flex;
+  display: inline-flex;
+  text-decoration: none;
 }
 
 .main-article__link-img {
