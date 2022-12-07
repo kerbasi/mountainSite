@@ -152,6 +152,10 @@
   color: var(--white);
   width: 950px;
   margin: 198px auto 843px;
+  height: 310px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .main-description__title {
@@ -180,7 +184,7 @@
 .main-description__subtitle {
   font-family: "Chronicle Display", serif;
   font-style: normal;
-  font-weight: 600;
+  font-weight: normal;
   font-size: 88px;
   line-height: 100px;
   text-transform: capitalize;

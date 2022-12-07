@@ -1,7 +1,7 @@
 ﻿@font-face {
   font-family: "Chronicle Display";
   font-style: bolder;
-  font-weight: normal;
+  font-weight: bolder;
   src: local("Chronicle-Display-Black"),
     url("./Chronicle-Display-Black.otf") format("opentype");
 }
