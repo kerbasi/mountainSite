@@ -5,6 +5,10 @@
 @import url(../fonts/chronicle-display-cufonfonts/style.css);
 @import url(../fonts/gilroy-bold-cufonfonts-webfont/style.css);
 
+html {
+  scroll-behavior: smooth;
+}
+
 .page {
   --white: #fff;
   --golden: #fbd784;
@@ -14,7 +18,7 @@
   min-height: 100vh;
   background: url(../images/VG.png) 0 768px / contain no-repeat,
     url(../images/MG.png) 0 464px / contain no-repeat,
-    url(../images/HG.png) 0 0 / contain no-repeat, #0b1d26;
+    url(../images/HG.png) 0 0 / contain no-repeat, var(--black);
   padding-bottom: 120px;
 }
 
@@ -26,12 +30,16 @@
   background: linear-gradient(
     330.24deg,
     rgba(11, 29, 38, 0) 31.06%,
-    #0b1d26 108.93%
+    var(--black) 108.93%
   );
 }
 
 .page__gray-background_pos_bottom {
-  background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0b1d26 61.38%);
+  background: linear-gradient(
+    180deg,
+    rgba(11, 29, 38, 0) 0%,
+    var(--black) 61.38%
+  );
   top: 1200px;
   height: 700px;
 }
@@ -59,6 +67,7 @@
   padding: 0;
   display: flex;
 }
+
 .header__nav-link {
   margin-right: 40px;
   font-weight: 700;
@@ -108,12 +117,20 @@
   padding-top: 20px;
   padding-right: 25px;
   height: 60px;
-  border-right: 3px solid var(--white);
+
   box-sizing: border-box;
-  opacity: 0.5;
+
+  display: inline-block;
+  text-decoration: none;
+  color: var(--white);
 }
 
-.aside-nav__link:first-of-type {
+.aside-nav__link-item {
+  opacity: 0.5;
+  border-right: 3px solid var(--white);
+}
+
+.aside-nav__link-item:first-of-type {
   opacity: 1;
 }
 
