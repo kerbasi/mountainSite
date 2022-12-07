@@ -15,6 +15,7 @@
   background: url(../images/VG.png) 0 768px / contain no-repeat,
     url(../images/MG.png) 0 464px / contain no-repeat,
     url(../images/HG.png) 0 0 / contain no-repeat, #0b1d26;
+  padding-bottom: 120px;
 }
 
 .page__gray-background {
